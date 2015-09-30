@@ -1,0 +1,17 @@
+---
+title: "rmark"
+output: html_document
+---
+
+
+```{r}
+library(leafletR)
+library(leaflet)
+m = leaflet()
+m = addTiles(m)
+m = addMarkers(m, lng=121.56094, lat=25.1154, popup="雙溪淨水廠 目前水質=濁度2%")
+m
+```
+
+
+
